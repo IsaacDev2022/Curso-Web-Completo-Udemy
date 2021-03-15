@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Aula 05 </title>
+        <meta charset="utf-8">
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+        <script type="text/babel">
+            // Usando let e var: análise de contexto 
+            var serie = "Friends";
+
+            {
+                var serie = "The walking dead";
+                console.log("Dentro do bloco " + serie);
+            }
+
+            console.log("Fora do bloco " + serie);
+        </script>
+    </head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Elementos flutuantes </title>
+        <meta charset="utf-8">
+
+        <style type="text/css">
+        .conteudo{
+            background: blue;
+            border: 1px solid grey;
+            width: 150px;
+            height: 150px;
+            float: left;
+            margin: 10px;
+
+        }
+
+        /*
+        .conteudo1{
+            background: red;
+            border: 1px solid grey;
+            width: 150px;
+            height: 50px;
+            margin: 10px;
+            float: left;
+
+        }
+        */
+
+        .conteudozero{
+            background: red;
+            border: 1px solid grey;
+            width: 150px;
+            height: 50px;
+            margin: 10px;
+
+        }
+
+        .clear{
+            clear: left;
+        }
+
+        #principal{
+            border: 1px solid red;
+            background: green;
+        }
+
+
+/* O float faz com que os conteúdos flutuem na tela,
+saindo do fluxo padrão de conteúdo */
+
+/* Quando muitas caixas estão flutuando, podemos 
+usar o comando clear para limpar o fluxo flutuante. 
+Isso serve porque geralmente os pontos flutuam um 
+do lado do outro, causando uma certa desordem. Com esse comando,
+podemos organizar os componentes na tela */
+
+    
+        
+        </style>
+    </head>
+<body>
+
+        <div id="principal">
+            <div class="conteudo">
+                Conteudo 1
+            </div>
+    
+            <div class="conteudo">
+                Conteudo 2
+            </div>
+    
+            <div class="conteudo">
+                Conteudo 3
+            </div>
+    
+            <div class="clear">
+            </div>
+        </div>
+           
+        
+</body>
+</html>

@@ -1,0 +1,34 @@
+ telefo tv <!DOCTYPE html>
+<html>
+    <head>
+        <title> Aula 05 - Objetos literais - objetos únicos </title>
+        <meta charset="utf-8">
+        <script>
+
+            let assinatura = {
+                idCliente: 100,
+                descricao: "Acesso a internet",
+                status() {
+                    console.log("Ativo");
+                }
+            }
+
+            console.log(assinatura.descricao);
+
+            // A referencia que a ponta para o objeto literal vai ser atribuída para a variável X.
+            // Não ocorre uma uma cópia, nem atribuição do objeto propriamente dito.
+            let x = assinatura;
+
+            console.log(x.descricao);
+
+            x.descricao = "Internet + tv + telefone";
+
+            console.log(assinatura.descricao);
+            console.log(x.descricao);
+    
+        </script>
+    </head>
+<body>
+
+</body>
+</html>

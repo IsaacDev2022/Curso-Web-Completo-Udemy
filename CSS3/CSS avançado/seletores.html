@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> </title>
+        <meta charser="utf-8">
+        <style>
+            /* -- Seletor universal *: ele seleciona todos os elementos da página html 
+            *{
+                border: 1px solid red;
+            }*/
+
+            /* -- Seletor de texto: seleciona elementos pelo tipo 
+            h1{
+                color: rebeccapurple;
+            }*/
+
+            /* -- Seletor de classe: seleciona elementos que fazem parte da mesma classe. 
+            Valor especificado após o caractere "." */
+            .verde{
+                color: green;
+            }
+
+            /* -- Seletor de ID: seleciona elementos que possuem seu atributo especificado após o caractere "#" */
+            #pimba{
+                color: goldenrod;
+            }
+
+            /* -- Seletor de filho: seleciona um elemento que é um filho direto de outro. 
+            Caractere ">" o da direita é filho da esquerda. 
+            li>a{
+                text-decoration: none;
+                color: red;
+            }*/
+
+            /* -- Seletor de descendente: seleciona elementos que é descendente de outro especificado
+            mas não filho diretamente, mas que esteja dentro da outra tag 
+            li a{
+                color: greenyellow;
+            }*/
+
+            /* -- Seletor de irmão adjacente: seleciona um elemento que é irmão próximo de outro. 
+            Ou seja, ele seleciona o próximo elemento. OBS: tem que ser abaixo do elemento, elementos anteriores 
+            não funcionam
+            h1+p{
+                color: red;
+            } */
+
+            /* -- Seletor de irmão geral: o seletor de irmão geral de outro, não precisando ser diretamente precendente */
+            h1~p{
+                color: red;
+            }
+
+        </style>
+    </head>
+<body>
+    <ul>
+        <li> 
+            <a href=""> Home </a>
+        </li>
+        <li>
+            <a href=""> Sobre </a>
+        </li>
+    </ul>
+
+    <a href=""> LINK TESTE </a>
+
+    <div> <p> <a href=""> Links </a> </p> </div >
+
+    <div>
+        <h1> É nois </h1>
+            <p> E ai irmão? </p>
+            <p> Tudo bão? </p>
+    </div>
+
+    <span class="verde"> Teste span </span>
+    <p class="verde"> Teste </p>
+    <p id="pimba"> Pimbaaaalllll </p>
+
+</body>
+</html>

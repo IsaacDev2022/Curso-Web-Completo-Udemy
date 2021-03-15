@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Aula 11- Funções construtoras </title>
+        <meta charset="utf-8">
+        <script>
+            let Carro = function() {
+                this.cor = "Amarelo";
+                this.mocelo = "Chevette";
+                this.velocidadeAtual = 0;
+                this.velocidadeMaxima = 180;
+
+                this.acelerar = function() {
+                    let velocidade = this.getVelocidadeAtual() + 10;
+                    this.setVelocidadeAtual(velocidade);
+                }
+
+                this.getVelocidadeAtual = function() {
+                    return this.velocidadeAtual;
+                }
+
+                this.setVelocidadeAtual = function(velocidadeAtual) {
+                    this.velocidadeAtual = velocidadeAtual
+                }   
+            }
+
+            let carro = new Carro(); // Podemos criar objetos a partir de funções construtoras
+            
+            console.log(`A velocidade atual é: ${carro.getVelocidadeAtual()}`);
+            carro.acelerar();
+            console.log(`A velocidade atual é: ${carro.getVelocidadeAtual()}`);
+        </script>
+    </head>
+<body>
+
+</body>
+</html>

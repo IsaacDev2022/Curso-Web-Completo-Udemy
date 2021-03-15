@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Aula 15 - Object prototype </title>
+        <meta charset="utf-8">
+        <script>
+
+            Object.prototype.atb50 = "z";
+
+            let animal = {atb1: "a"}
+            let vertebrado = {__proto__: animal, atb2: "b"}
+            let ave = {__proto__: vertebrado, atb3: "c"} // Se houver sobrepisção, o JS vai procurar o escopo masi baixo, ou seja, o último declarado
+
+            console.log(ave.atb3, ave.atb2, ave.atb1, ave.atb50);
+    
+        </script>
+    </head>
+<body>
+
+</body>
+</html>

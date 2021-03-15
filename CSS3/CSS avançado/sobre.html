@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> </title>
+        <meta charser="utf-8">
+        <style>
+
+            ul{
+                list-style-type: none;
+            }
+
+            ul a{
+                list-style-type: none;
+                width: 200px;
+                height: 40px;
+                display: block;
+                background: #f7b600 url('imagens_css/men.png');
+                color: #000;
+                text-decoration: none;
+                text-indent: 40px; /* Este atributo modifica a altura da linha em que o texto está inserido */
+                line-height: 40px;
+            }
+
+            a:visited{
+                background: url('imagens_css/men.png') left;
+            }
+
+            a:hover {
+                background-position: right bottom;
+                background-color: #f99200; 
+                color: #fff;
+            }
+
+            /* Primeira forma de marcar a página */
+            /* a:hover, .selecionado a {
+                background-position: right bottom;
+                background-color: #f92200; 
+                color: #fff;
+            }*/
+
+            /* Segunda forma de marcar a página */
+            #home .home a,
+            #sobre .sobre a{
+                background-position: right bottom;
+                background-color: #f99200; 
+                color: #fff;
+            }
+
+        </style>
+    </head>
+<body id="sobre">
+
+<h2> Sobre </h2> 
+    <ul>
+        <li class="home"> <a href="marcação.html"> Home </a> </li>
+        <li class="sobre"> <a href="sobre.html"> Sobre </a> </li>
+        <li class="servicos"> <a href="servicos.html"> Serviços </a> </li>
+        <li class="noticias"> <a href="noticias.html"> Notícias </a> </li>
+        <li class="contato"> <a href="contato.html"> Contato </a> </li>
+    </ul>  
+    
+</body>
+</html>

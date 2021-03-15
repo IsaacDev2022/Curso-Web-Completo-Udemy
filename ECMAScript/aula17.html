@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Aula 17 / Operador rest/spread parte 2 </title>
+        <meta charset="utf-8">
+        <script>
+            // Contexto rest
+
+            function soma(...param) {
+                let resultado = 0;
+
+                console.log(param);
+
+                param.forEach(v => resultado += v);
+
+                return resultado;
+            }
+
+            console.log(soma(3, 8, 5, 7));
+
+            function multiplicar(m, ...p) {
+                console.log(m);
+                let resultado = 0;
+                console.log(p);
+
+                p.forEach(v => resultado += m * v);
+
+                return resultado;
+            }
+
+            console.log(multiplicar(5, 7, 12, 3, 49));
+    
+        </script>
+    </head>
+<body>
+
+</body>
+</html>

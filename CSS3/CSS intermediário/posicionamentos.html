@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Posicionamentos </title> 
+        <meta charset="utf-8">
+
+        <style type="text/css">
+
+        body {
+            background: #007fc7;
+        }
+
+         #container {
+             background: #FFF;
+             width: 800px;
+             margin: 10px auto;
+             padding: 10px;
+             position: relative;
+         }
+
+        h1 {
+            position: static;
+        }
+
+        p {
+            position: static;
+            width: 400px;
+        }
+
+        .relative {
+            border: 1px solid red;
+            position: relative; 
+            /*top, right, bottom e left */
+            top: 20px; /* Desce 20 px em relação a sua posição padrão */
+            left: 30px;
+        }
+
+        .absolute {
+            position: absolute;
+            border: 1px solid red;
+            top: 3px;
+            background: #f2f2f2;
+            top: 80px;
+            right: 20px;
+        }
+
+        .fixed {
+            position: fixed;
+            border: 1px solid red;
+            /* Esse position é para ele ficar fixo em relação a janela do navegador */
+        }
+
+        </style>
+    </head>
+<body>
+<!-- Posicionamentos (static, relative, absolute e fixed)-->
+    <!-- O posicionamento static é o valor padrão do CSS -->
+    <!-- O relative é um posicionamento que significa: relativo a algo, ou seja, ao container pai.
+    Para utilzar o relative, precisamos utilizar propriedades de deslocamento: 
+        top, right, bottom e left -->
+    <!-- O absolute é um tipo de posicionamento que faz o elemento sair do fluxo padrão do HTML,
+    nesse contexto, o elemento não possui um elemento pai específico, podendo ser posicionado em qualquer lugar da página -->
+    <!-- A opção fixed, como o próprio nome já diz, é um posicionamento fixo, ou seja, um elemento fica 
+    "preso" em uma posição no navegador por mais que o usuário role para cima ou para baixo -->
+
+    <div id="container">
+        <h1> Posicionamentos </h1>
+
+        <p>
+            P1: Loren ipsum ijrg dfvrea vbrf cv fv b vre vver vcv 
+            Loren ipsum ijrg dfvrea vbrf cv fv b vre vver vcv 
+            Loren ipsum ijrg dfvrea vbrf cv fv b vre vver vcv 
+            Loren ipsum ijrg dfvrea vbrf cv fv b vre vver vcv 
+            Loren ipsum ijrg dfvrea vbrf cv fv b vre vver vcv 
+            Loren ipsum ijrg dfvrea vbrf cv fv b vre vver vcv 
+        </p>
+
+        <p class="absolute">
+            P2: Loren ipsum ijrg dfvrea vbrf cv fv b vre vver vcv 
+            Loren ipsum ijrg dfvrea vbrf cv fv b vre vver vcv 
+            Loren ipsum ijrg dfvrea vbrf cv fv b vre vver vcv 
+            Loren ipsum ijrg dfvrea vbrf cv fv b vre vver vcv 
+            Loren ipsum ijrg dfvrea vbrf cv fv b vre vver vcv 
+            Loren ipsum ijrg dfvrea vbrf cv fv b vre vver vcv 
+        </p>
+
+        <p>
+            P3: Loren ipsum ijrg dfvrea vbrf cv fv b vre vver vcv 
+            Loren ipsum ijrg dfvrea vbrf cv fv b vre vver vcv 
+            Loren ipsum ijrg dfvrea vbrf cv fv b vre vver vcv 
+            Loren ipsum ijrg dfvrea vbrf cv fv b vre vver vcv 
+            Loren ipsum ijrg dfvrea vbrf cv fv b vre vver vcv 
+            Loren ipsum ijrg dfvrea vbrf cv fv b vre vver vcv 
+        </p>
+
+        <p>
+            P3: Loren ipsum ijrg dfvrea vbrf cv fv b vre vver vcv 
+            Loren ipsum ijrg dfvrea vbrf cv fv b vre vver vcv 
+            Loren ipsum ijrg dfvrea vbrf cv fv b vre vver vcv 
+            Loren ipsum ijrg dfvrea vbrf cv fv b vre vver vcv 
+            Loren ipsum ijrg dfvrea vbrf cv fv b vre vver vcv 
+            Loren ipsum ijrg dfvrea vbrf cv fv b vre vver vcv 
+        </p>
+
+        <p>
+            P3: Loren ipsum ijrg dfvrea vbrf cv fv b vre vver vcv 
+            Loren ipsum ijrg dfvrea vbrf cv fv b vre vver vcv 
+            Loren ipsum ijrg dfvrea vbrf cv fv b vre vver vcv 
+            Loren ipsum ijrg dfvrea vbrf cv fv b vre vver vcv 
+            Loren ipsum ijrg dfvrea vbrf cv fv b vre vver vcv 
+            Loren ipsum ijrg dfvrea vbrf cv fv b vre vver vcv 
+        </p>
+
+        <p class="fixed">
+            P3: Loren ipsum ijrg dfvrea vbrf cv fv b vre vver vcv 
+            Loren ipsum ijrg dfvrea vbrf cv fv b vre vver vcv 
+            Loren ipsum ijrg dfvrea vbrf cv fv b vre vver vcv 
+            Loren ipsum ijrg dfvrea vbrf cv fv b vre vver vcv 
+            Loren ipsum ijrg dfvrea vbrf cv fv b vre vver vcv 
+            Loren ipsum ijrg dfvrea vbrf cv fv b vre vver vcv 
+        </p> 
+
+    </div>
+
+</body>
+</html>

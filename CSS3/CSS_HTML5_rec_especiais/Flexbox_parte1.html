@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Flexbox - parte 1 </title>
+        <meta charset="utf-8">
+        <style>
+            #conteudo {
+                background: #dcdcdc;
+                height: 400px;
+                display: flex;
+                /* row|row-reverse|column|column-reverse 
+                */
+                flex-direction: column;
+
+                /* rowrap|wrap|wrap-reverse
+                */
+                flex-wrap: wrap; 
+
+                /*flex-start|flex-end|center|spance-between|spance-around
+                */
+                justify-content: space-around; 
+
+                /* stretch|center|flex-start|flex-end|baseLine 
+                */
+                align-items: baseLine;
+                
+            }
+
+            .item {
+                width: 100px;
+                height: 100px;
+                margin: 10px;
+                background: #ffffff;
+                border: 1px solid gray;
+                
+            }
+        </style>
+    </head>
+<body>
+    <!-- Flexbox: Flexible box layout - permitir que organizar elementos em container de forma mais simples 
+    e deixar os layouts mais flexíveis -->
+    <h1> Flexbox </h1>
+    <div id="conteudo">
+        <div class="item"> 01 </div>
+        <div class="item"> 02 </div>
+        <div class="item"> 03 </div>
+        <div class="item"> 04 </div>
+        <div class="item"> 05 </div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Flexbox - parte 3 </title>
+        <meta charset="utf-8">
+        <style>
+            #conteudo {
+                background: #dcdcdc;
+                display: flex;
+            }
+
+            .item {
+                /* width: 200px; */
+                height: 100px;
+                margin: 10px;
+                background: #ffffff;
+                border: 1px solid gray;
+                flex-grow: 0; /* Definir a proporção em que um item vai crescer */
+                
+                flex-shrink: 0; /* Definir a capacidade de redução de um item */
+            
+                flex-basis: 100px; /* Indica o tamanho inicial do flex imten antes da distribuição de espaço restante */
+            }
+            
+            .item1 {
+                flex-shrink: 0;
+            }
+
+            .item2 {
+
+            }
+
+        </style>
+    </head>
+<body>
+    <h1> Flexbox </h1>
+    <div id="conteudo">
+        <div class="item item1"> 01 </div>
+        <div class="item"> 02 </div>
+        <div class="item"> 03 </div>
+        <div class="item"> 04 </div>
+        <div class="item"> 05 </div>
+    </div>
+</body>
+</html>

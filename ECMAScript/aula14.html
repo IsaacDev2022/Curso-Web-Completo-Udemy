@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Aula 15 - Prototype</title>
+        <meta charset="utf-8">
+        <script>
+            // Um prototype é uma padrão
+            // Todo objeto no JS é uma herança do Object
+            // Object é uma função
+
+            // Objeto literal
+            let a1 = {
+                cor: "Branco",
+                modelo: "Airbus a320",
+                levantarVoo: function() {
+                    console.log("Levantar voo");
+                }
+            }
+
+            // Função construtora
+            let Aviaof = function() {
+                this.cor = "Azul",
+                this.modelo = "Boeing 737",
+                this.levantarVoo = function() {
+                    console.log("Levantar voo");
+                }
+            }
+            
+            let a2 = new Aviaof();
+
+            // Classe
+            class AviaoC {
+                constructor() {
+                    this.cor = "Vermelho";
+                    this.modelo = "Embraer E-jets";
+                }
+
+                levantarVoo() {
+                    console.log("Levantar voo");
+                }
+            }
+
+            let a3 = new AviaoC();
+
+            console.log(a1)
+            console.log(a2)
+            console.log(a3)
+        </script>
+    </head>
+<body>
+
+</body>
+</html>

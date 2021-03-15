@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Aula 04 - Herança </title>
+        <meta charset="utf-8">
+        <script>
+            class Animal {
+                constructor() {
+                    this.cor = '';
+                    this.tamanho = null;
+                }
+
+                dormir() {
+                    console.log("Dormir");
+                }
+            }
+
+            class Cachorro extends Animal {
+                constructor() {
+                    super();
+                    this.orelhas = 'Grandes e caídas';
+                }
+
+                correr() {
+                    console.log("Correr");
+                }
+
+                rosnar() {
+                    console.log("Rosnar");
+                }
+            }
+
+            class Passaro extends Animal {
+                constructor() {
+                    super();
+                    this.bico = "Curto";
+                }
+
+                voar() {
+                    console.log("Voar");
+                }
+            }
+
+            class Papagaio extends Passaro {
+                constructor() {
+                    this.bico = "Médio";
+                    this.sabeFalar = true;
+                }
+            }
+
+            let cachorro = new Cachorro();
+            let passaro = new Passaro();
+
+            console.log(cachorro.dormir);
+            console.log(passaro);
+
+            // A herança funciona como uma cascata.
+
+        </script>
+    </head>
+<body>
+
+</body>
+</html>

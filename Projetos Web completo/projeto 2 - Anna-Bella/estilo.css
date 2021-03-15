@@ -1,0 +1,42 @@
+body {
+    background-image: url('imagens/fundo.png');
+}
+
+.border {
+    border: 10px solid;
+    color: gray;
+}
+
+#principal {
+
+}
+
+#conteudo {
+    background: white;
+    margin-right: 220px;
+    margin-left: 220px;
+}
+
+#navbar {
+    font-size: 20px;
+    background-color: #c5c5b2;
+    padding: 10px;
+    margin-right: 220px;
+    margin-left: 220px;
+}
+
+h1 {
+    font: italic bold 30px Georgia, serif;
+    color: gray;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+p {
+    margin-right: 5%;
+    margin-left: 5%;
+    text-align: justify;
+}

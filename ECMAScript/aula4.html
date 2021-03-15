@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Aula 04 </title>
+        <meta charset="utf-8">
+        <script>
+            // let: operador de declaração de variável
+            /* Existem 3 tipos de escopo em JS:
+                - global
+                - de função
+                - de escopo
+            */
+
+            // O let preserva o escopo onde a variável é criada
+
+            if (true) {
+                let serie = "Friends";
+                console.log(serie);
+            }
+
+            function x() {
+
+                if (true) {
+
+                }
+            }
+
+            x();
+
+            if (true) {
+                var serie = "The Walking dead";
+            }
+
+            // Se uma variável for criada dentro de um escopo de função, ela não sofre elevação de nível para global
+            // Mas se for criada em qualquer escopo fora de função, ela é elevada
+            // O escopo de bloco tem nativamente comportamento de rosting
+        </script>
+    </head>
+<body>
+    
+</body>
+</html>

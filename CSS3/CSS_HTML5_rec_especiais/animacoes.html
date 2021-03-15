@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <title> Animações </title>
+        <meta charset="utf-8"> 
+        <style>
+            /* Animações: em css, são basicamente alterar as formatações de um determinado
+            atributo para outras formatações. */
+            /* Para criar animações, basca seguir a sintaxe abaixo */
+            @keyframes animacao-caixa {
+                /* Estado inicial (de) */
+                from {
+                    background: red;
+                    border-radius: 0px;
+                    top: 0px;
+                    left: 0px;
+                }
+
+                /* Estado final (para) */
+                to {
+                    background: yellow;
+                    border-radius: 300px;
+                    top: 200px;
+                    left: 200px;
+                }
+            }
+
+            #caixa {
+                width: 300px;
+                height: 300px;
+                background: red;
+                position: relative; /* PBS: Para inserir movimentação, tem que inserir o position relative */
+                /* animation-name: animacao-caixa; /* É preciso inserir o nome da animação aqui para o browser reconhecer 
+                animation-duration: 5s;  Duração da animação, ou seja, quanto tempo vai durar
+                animation-delay: 3s;  Tempo de atraso da animação, ou seja, quanto tempo ele leva até começar 
+                animation-iteration-count: 2;  Quantidade de vezes que uma animação é executada 
+                animation-direction: alternate;  Direção da animação */
+
+                animation: animacao-caixa 5s 3s 2 alternate; /* Para juntar todas as configurações em uma só linha */
+            }
+        </style>
+    </head>
+<body>
+    <div id="caixa">
+
+    </div>
+</body>
+</html>

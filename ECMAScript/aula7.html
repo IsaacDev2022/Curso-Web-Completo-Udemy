@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Aula 07 </title>
+        <meta charset="utf-8">
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+        <script type="text/babel">
+            // Const: operador de declaração de variáveis
+            // Serve apra criar constantes, ou seja, variáveis que não 
+            // podem ter seus valores alterados durante a execução
+            // O processo de atribuição de valor para constantes precisa ser imediato, durante sua declaração
+
+            const SERIE = "Friends";
+
+            // Em constantes, não possuimos conflitos em diferentes escopos.
+
+            function x() {
+                const SERIE = "The walking dead";
+                console.log(SERIE);
+            }
+
+            x();
+        </script>
+    </head>
+<body>
+
+</body>
+</html>

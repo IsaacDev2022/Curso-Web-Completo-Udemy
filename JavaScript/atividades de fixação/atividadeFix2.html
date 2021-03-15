@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Atividade para fixação de conteúdo 2 - JS </title>
+        <meta charset="utf-8">
+    </head>
+    <script>    
+        var nome = prompt("Digite seu nome: ");
+        var altura = prompt("Digite sua altura: ");
+        var peso = prompt("Digite seu peso: ");
+
+        altura = parseFloat(altura);
+        peso = parseFloat(peso);
+
+        var IMC = peso / (altura * 2);
+
+        var classificacao;
+
+        if (IMC < 16.0) {
+            classificacao = "Baixo peso, muito grave";
+        }
+
+        else if (IMC >= 16 && IMC <= 16.99) {
+            classificacao = "Baixo peso, grave";
+        }
+
+        else if (IMC >= 17 && IMC < 18.49) {
+            classificacao = "Baixo peso";
+        }
+
+        else if (IMC >= 18.50 && IMC < 24.99) {
+            classificacao = "Peso normal";
+        }
+
+        else if (IMC >= 25 && IMC < 29.99) {
+            classificacao = "Sobrepeso";
+        }
+
+        else if (IMC >= 30 && IMC < 34.99) {
+            classificacao = "Obesidade grau 1";
+        }
+
+        else if (IMC >= 35 && IMC < 39.99) {
+            classificacao = "Obesidade grau 2";
+        }
+
+        else if (IMC > 40) {
+            classificacao = "Obesidade grau 3";
+        }
+
+        document.write(nome + " possui índice de massa corporal igual a " + IMC + ", sendo classificado como: " + classificacao);
+        
+    </script>
+
+<body>
+    
+</body>
+</html>

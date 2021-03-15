@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> </title>
+        <meta charser="utf-8">
+        <style>
+
+            body {
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            }
+
+            table {
+                width: 600px;
+                border-collapse: collapse; /* Junta as linhas das tabelas */
+            }
+
+            th {
+                border-top: 1px solid #999;
+                border-bottom: 1px solid #111;
+                text-transform: uppercase; /* Deixa todas as letras maiúsculas */
+                letter-spacing: 0.1em;
+            }
+
+            th:hover {
+                background: grey;
+            }
+
+            tr:hover{
+                background: blue;
+            }
+
+            tr.alternado {
+                background-color: #efefef;
+            }
+
+            .numero {
+                text-align: right;
+            }
+
+        </style>
+    </head>
+<body>
+    
+        <h2> Estilizando tabelas </h2>
+        <table>
+            <tr>
+                <th> Codigo </th>
+                <th> Produto </th>
+                <th> Peso </th>
+            </tr>
+            <tr>
+                <td> 001 </td>
+                <td> Notebook </td>
+                <td class="numero"> R$ 2.500 </td>
+            </tr>
+            <tr class="alternado">
+                <td> 002 </td>
+                <td> Tablet </td>
+                <td class="numero"> R$ 1.500 </td>
+            </tr>
+            <tr>
+                <td> 003 </td>
+                <td> Iphone </td>
+                <td class="numero"> R$ 3.500 </td>
+            </tr>
+            <tr class="alternado">
+                <td> 004 </td>
+                <td> Nexus </td>
+                <td class="numero"> R$ 3.500 </td>
+            </tr>
+        </table>
+</body>
+</html>

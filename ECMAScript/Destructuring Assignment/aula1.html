@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Aula 1 </title>
+        <meta charset="utf-8">
+        <script>
+            // Operador de destruturação, ou seja, ele tira valores de dentro de uma estrutura de dados, sendo um array ou objeto
+            // Contexto de array
+            let frutas = ["Abacaxi", "Uva", "Pera", "Mamão"]
+
+            // let [a, b, , c] = frutas; // ELe tira valores do array e atribui as variáveis dentro dos colchetes
+            let [a, b, c, d, e = "Banana"] = frutas // Parametro default caso o retorno seja undefined
+            // Se o valor default for atribuído para um valor que já existe, o valor default será desconsiderado
+
+            // console.log(a, b, c, d, e);
+            let coisas = [["Abacaxi", "Uva", "Pera", "Mamão"], ["José", "Maria"]]
+            let [,[,n2]] = coisas;
+
+            console.log(n2);
+    
+        </script>
+    </head>
+<body>
+
+</body>
+</html>

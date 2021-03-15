@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Sobreposiição </title> 
+        <meta charset="utf-8">
+
+        <style type="text/css">
+
+            .conteudo1{
+                border: 1px solid red;
+                background: orange;
+                width: 200px;
+                height: 200px;
+                position: absolute;
+                z-index: 2; /* Para qual elemento vai aparecer primeiro quando ocorrer sobreposição */
+            /* Quanto maior o numero, mais a frente o elemento aparece */
+            }
+
+            .conteudo2{
+                border: 1px solid red;
+                background: green;
+                width: 200px;
+                height: 200px;
+                position: absolute;
+                top: 80px;
+                left: 80px;
+                z-index: 1;
+            }
+
+            .conteudo3{
+                border: 1px solid red;
+                background: blue;
+                width: 200px;
+                height: 200px;
+                position: absolute;
+                top: 160px;
+                left: 160px;
+                z-index: 1;
+                /* Caso dois elementos tenham o mesmo numero, vai aparecer de acordo com a ordem do documento */
+            }
+
+        </style>
+    </head>
+<body>
+    <div class="conteudo1">
+        Conteudo 01
+    </div>
+
+    <div class="conteudo2">
+        Conteudo 02
+    </div>
+
+    <div class="conteudo3">
+        Conteudo 02
+    </div>
+</body>
+</html>

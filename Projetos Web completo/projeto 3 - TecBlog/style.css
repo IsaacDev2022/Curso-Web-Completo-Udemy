@@ -1,0 +1,96 @@
+/* Barra de navegação e título da página */
+body{
+    background: #f2f2f2;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+*{
+    /* Este seletor "*" limpa as formatações padrão do browser */
+    padding: 0px;
+    margin: 0px;
+}
+
+h1{
+    color: #4d4d4d;
+}
+
+#blog{
+    color: white;
+}
+
+.navbar{
+    background-color: #ffcc00;
+    padding: 15px;
+    text-align: center;
+}
+
+
+/* Formatação dos links do menu */
+a:link, a:visited{
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    padding: 15px;
+}
+
+a:hover{
+    background: white;
+    color: #ffcc00;
+}
+
+
+/* Formatação de conteúdo */
+.conteudo{
+    background: white;
+    margin-right: 515px;
+    margin-left: 160px;
+    padding: 15px;
+}
+
+.area_lateral{
+    float: right;
+    clear: both;
+    background: white;
+    position: static;
+    padding: 15px;
+    margin-right: 160px;
+}
+
+h1{
+    color: #ffcc00;
+}
+
+h2{
+    
+}
+
+h3{
+    background: #c7d1c9;
+    color: #595c5a;
+    padding: 5px;
+}
+
+p{
+    text-align: justify;
+}
+
+#leia{
+    color: #ffcc00;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.data_postagem{
+    font-size: 0.9em;
+    border-bottom: 1px solid;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+

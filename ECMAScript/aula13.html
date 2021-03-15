@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Aula 13 - Funções factory </title>
+        <meta charset="utf-8">
+        <script>
+            // Através do padrão de projeto factory podemos implementar uma "fábrica"
+            // par criação dso nosssos objetos em tempo de execução
+            // Criação de objetos dinamicos, ou seja, em tempo de execução
+
+            let Bicicleta1 = {
+                cor: "Branca",
+                marcha: "única",
+                aro: 12,
+                pedalar() {
+                    console.log("Método peladar executado");
+                }
+            }
+
+            let Bicicleta2 = {
+                cor: "Vermelha",
+                marcha: "18",
+                aro: 26,
+                pedalar() {
+                    console.log("Método peladar executado");
+                }
+            }
+
+            console.log(Bicicleta1);
+            console.log(Bicicleta2);
+
+            // ------------------------------------------
+            let BicicletaFactory = function(cor, marcha, aro) {
+                // Lógica
+                // Requisição http
+                // Resposta http
+                return {
+                    cor: cor,
+                    marcha: marcha,
+                    aro: aro,
+                    pedalar() {
+                        console.log("Método peladar executado");
+                    }
+                }
+            }
+
+            let Bicicleta3 = BicicletaFactory("Vermelha", "18", 26);
+            console.log(Bicicleta3);
+
+            console.log(`Cor: ${Bicicleta3.cor}`);
+
+            let Bicicleta4 = BicicletaFactory("Vermelha", "18", 26);
+            console.log(Bicicleta4);
+    
+        </script>
+    </head>
+<body>
+
+</body>
+</html>

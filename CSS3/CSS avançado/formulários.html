@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> </title>
+        <meta charser="utf-8">
+        <style>
+            body { 
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            }
+
+            fieldset {
+                margin: 1em 0;
+                padding: 1em;
+                border: 1px solid #ccc;
+                background: #f8f8f8;
+            }
+
+            legend {
+                font-weight: bold;
+            }
+
+            label {
+                display: grid;
+                cursor: pointer;
+            }
+
+            /* Seletor de atributo: input[type="text"] */
+            input {
+                width: 20em;
+            }
+
+            textarea {
+                width: 100%;
+                height: 10em;
+            }
+
+            input.radio, input.checkbox, input.submit {
+                width: auto;
+            }
+
+        </style>
+    </head>
+<body>
+
+    <h2> Estilizando formulários </h2> 
+    <form>
+        <fieldset>
+            <legend> Detalhes de contato: </legend>
+                <div>
+                    <label for="nome"> Nome: </label> 
+                    <input type="text" name="nome" id="nome">
+                </div>
+                <div>
+                    <label for="email"> Email: </label> 
+                    <input type="text" name="email" id="email">
+                </div>
+                <div>
+                    <label for="url"> URL: </label> 
+                    <input type="text" name="url" id="url">
+                </div>
+        </fieldset>
+        <fieldset>
+            <legend> Comentários: </legend>
+                <div>
+                    <label for="mensagem"> Mensagem: </label>
+                    <textarea name="mensagem" id="mensagem"> </textarea>
+                </div>
+        </fieldset>
+        <fieldset>
+            <legend> Lembrar de mim </legend>
+                <label>
+                    <input type="radio" name="lembrar" id="sim">
+                </label>
+        </fieldset>
+        <fieldset>
+            <legend> Lembrar de mim </legend>
+                <label>
+                    <input type="radio" name="lembrar" id="não">
+                </label>
+        </fieldset>
+
+    </form>
+</body>
+</html>

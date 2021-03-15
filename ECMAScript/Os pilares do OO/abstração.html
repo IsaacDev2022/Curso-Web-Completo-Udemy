@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Aula 02 - Abstração </title>
+        <meta charset="utf-8">
+        <script>
+        // Compreender coisas do mundo real e trazer para a programação.
+        /*
+            . Entidade: algo do mundo real que pode ser representada de maneira programática.
+            . Identidade: algo que identifica unicamente uma entidade.
+            . Características/atributos: coisas que definem aquela entidade, que ajudam a montar as regras de negócio.
+            . Ações/métodos: são comportamentos que aquela entidade realiza no mundo real que devem ser passadas para a programação.
+        */
+
+        // Modelo de objeto
+        class ContaBancaria {
+
+            constructor() {
+                // O this conecta o atributo ao contexto do objeto.
+                this.agencia = 1075;
+                this.numeroConta = 34626;
+                this.saldo = 50;
+                this.limite = 450;
+            }
+
+            depositar(valorDeposito) {
+                this.saldo += valorDeposito;
+            }
+
+            sacar(valorSaque) {
+                this.saldo -= valorSaque;
+            }
+
+            consultarSaldo() {
+                return this.saldo;
+            }
+        }
+
+        let x = new ContaBancaria();       
+        
+        x.depositar(50);
+        console.log(x.consultarSaldo());
+    
+        </script>
+    </head>
+<body>
+
+</body>
+</html>

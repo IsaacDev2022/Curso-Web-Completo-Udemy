@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Aula 16 - Operador Rest/spread </title>
+        <meta charset="utf-8">
+        <script>
+            // O operador depende do contexto em que está inserido
+            // spread: espalhar estruturas de dados
+            // rest: juntar estruturas de dados
+
+            // string
+            let tituloArtigo = "Como utilizar o operador rest/spread";
+
+            console.log(tituloArtigo);
+            console.log(...tituloArtigo);
+            console.log([...tituloArtigo]);
+
+            // Arrays
+            let listaCursos1 = ["NodeJS e MongoDB", "ES6, TypeScript e Angular 4"]
+            let listaCursos2 = ["Multiplataforma Android/IOS", "Introdução ao GNU/Linux"]
+            let listaCursosCompleto = ["Web completo", "Android Completo", ...listaCursos1, ...listaCursos2]
+            console.log(listaCursosCompleto);
+
+            // Objetos
+            let pessoa = {
+                nome: "João",
+                idade: 27
+            }
+
+            let clone = {
+                endereco: "Rua abc", 
+                ...pessoa
+            }
+
+            console.log(clone);
+    
+        </script>
+    </head>
+<body>
+
+</body>
+</html>

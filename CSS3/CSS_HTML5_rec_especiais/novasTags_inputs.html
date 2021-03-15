@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <title> Novas tags input </title>
+        <meta charset="utf-8">
+    </head>
+<body>
+    <form>
+        <label for="name"> Nome: </label>
+        <input type="text" name="nome"> <br><br>
+
+        <label for="email"> Email: </label>
+        <input type="email" name="email" required autofocus> <br><br> <!-- Email: Novo type do HTML5-->
+        <!-- Required serve como uma forma de validar campos, ou seja, ele não deixa campos vazios -->
+        <!-- Autofocus é para focar especificamente naquele campo -->
+        
+        <label for="numero"> Número: </label>
+        <input type="number" name="number" max="50" step="5"> <br><br> <!-- Number é um novo type do HTML 5-->
+        <!-- Step define intervalos entre os números -->
+        
+        <label for="url"> Url: </label>
+        <input type="url" name="url"> <br><br> <!-- Url, novo type -->
+        
+        <label for="pesquisa"> Pesquisa: </label>
+        <input type="search" name="pesquisa"> <br><br> <!-- Search, novo type-->
+        
+        <label for="range"> Range: </label>
+        <input type="range" name="range"> <br><br> <!-- Range, novo type, é um marcador que se consegue arrastar de um lado para outro -->
+        <input type="submit" name="" value="Enviar">
+
+        <label for="data"> Data: </label>
+        <input type="date" name="data"> <br><br> <!-- Date, novo type -->
+    
+        <label for="cor"> Cor: </label>
+        <input type="color" name="cor"> <br><br> <!-- Color, novo type-->
+    </form>
+</body>
+</html>

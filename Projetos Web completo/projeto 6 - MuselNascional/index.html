@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<htmL>
+    <head>
+        <title> </title>
+        <meta charset="utf-8">
+        <!-- Normalize -->
+        <link rel="stylesheet" type="text/css" href="style/normalize.css">
+
+        <!-- Estilo -->
+        <link rel="stylesheet" type="text/css" href="style/estilo.css">
+    </head>
+<body>
+    <!-- Início do container -->
+    <div id="container">
+        <!-- Início do header -->
+        <header>
+            <div id="logo">
+                <h1> <a href=""> Musel Nacional </a> </h1>
+            </div>
+
+            <!-- Início da barra de navegação -->
+            <nav> 
+                <ul>
+                    <li> <a href=""> Home </a> </li>
+                    <li> <a href=""> Exposição </a> </li>
+                    <li> <a href=""> Pesquisa </a> </li>
+                    <li> <a href=""> Arcevo </a> </li>
+                    <li> <a href=""> Vídeos </a> </li>
+                    <li> <a href=""> Fotos </a> </li>
+                    <li> <a href=""> Contato </a> </li>
+                </ul>
+            </nav>
+            <!-- Fim da barra de navegação -->
+        </header>
+        <!-- Fim do header -->
+
+        <div id="principal">
+            <!-- Início do conteúdo principal -->
+            <div id="conteudo">
+                <section id="capa">
+                    <img src="img/museu.png">
+                </section>
+
+                <section id="postagens">
+                    <article id="video">
+                        <h3> Vídeo: conheça o museu </h3>
+                        <iframe width="310" height="170" src="https://www.youtube.com/embed/RGUYb-hivrc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </article>
+
+                    <article id="mapa">
+                        <h3> Mapa: encontre o museu </h3>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3163.165964241698!2d-43.228717585381546!3d-22.90575504359207!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997e58a085b7af%3A0x4d11e9a933d38ce3!2sMuseu%20Nacional%20-%20UFRJ!5e1!3m2!1spt-BR!2sbr!4v1599225027096!5m2!1spt-BR!2sbr" width="310" height="170" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    </article>
+
+                    <article id="exposicoes">
+                        <h3> Exposições </h3>
+                            <ul>
+                                <li> 
+                                    <a href=""> Os assustadores insetos </a>
+                                </li>
+                                <li> 
+                                    <a href=""> O cranio de Luzia, a mulher mais antiga do Brasil </a>
+                                </li>
+                                <li> 
+                                    <a href=""> Preguiça gigante e tigre-dentes-de-sabre </a>
+                                </li>
+                                <li> 
+                                    <a href=""> Plantas do Brasil central </a>
+                                </li>
+                                <li> 
+                                    <a href=""> Teresa Cristina: A imperatriz arqueóloga </a>
+                                </li>
+                                <li> 
+                                    <a href=""> Arte com Dinossauros - Paleoarte </a>
+                                </li>
+                                <li> 
+                                    <a href=""> <strong> Veja todos (65) </strong> </a>
+                                </li>
+                            </ul>
+                    </article>
+
+                    <article id="historia">
+                        <h3> 200 anos de história </h3>
+                        <p>
+                            Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.
+                        </p>
+                        <a href=""> <strong> Leia mais </strong> </a>
+                    </article>
+                </section>
+            </div>
+            <!-- Fim do conteúdo principal -->
+
+            <!-- Início do aside -->
+            <aside>
+                <section id="depoimento">
+                    <img src="img/depoimento.png"> 
+                </section>
+
+                <!-- Início da seção de visita -->
+                <section id="visita">
+                    <h4> Faça uma visita: </h4>
+                        <form>
+                            <fieldset>
+                                <legend> Selecione uma data: </legend>
+                                
+                                <label fpr="data"> Data: </label>
+                                <input type="text" id="data" value="dd/mm/aaaa"> <br>
+
+                                <label fpr="qtd"> Quantidade de pessoas: </label>
+                                <input type="text" style="width: 43px" id="qtd" value="1">
+
+                            </fieldset>
+                            <input class="botao" type="submit" value="Verificar disponibilidade"> 
+                        </form>
+                </section>
+                <!-- Fim da seção de visita -->
+
+                <!-- Início da galeria -->
+                <section id="galeria">
+                    <h4> Galeria de fotos: </h4>
+
+                    <a href=""> 
+                        <img src="img/imagem1.jpg" height="93" width="93">
+                    </a>
+
+                    <a href=""> 
+                        <img src="img/imagem2.jpg" height="93" width="93">
+                    </a>
+
+                    <a href=""> 
+                        <img src="img/imagem3.jpg" height="93" width="93">
+                    </a>
+
+                    <a href=""> 
+                        <img src="img/imagem4.jpg" height="93" width="93">
+                    </a>
+                </section>
+                <!-- Fim da galeria -->
+            </aside>
+            <!-- Fim do aside -->
+            
+            <!-- Início do rodapé-->
+            <footer>
+                <p>
+                    <a href=""> Home </a>
+                    <a href=""> Exposição </a> 
+                    <a href=""> Pesquisa </a> 
+                    <a href=""> Arcevo </a> 
+                    <a href=""> Vídeos </a> 
+                    <a href=""> Fotos </a> 
+                    <a href=""> Contato </a> 
+                </p>
+                <p>
+                   2019 <a href="">Musel nacional </a> - Todos os direitos reservados. 
+                </p>
+            </footer>
+            <!-- Fim do rodapé -->
+        </div>
+
+    </div>
+    <!-- Fim do container -->
+</body>
+</htmL>

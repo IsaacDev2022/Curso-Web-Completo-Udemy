@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Aula 2 </title>
+        <meta charset="utf-8">
+        <script>
+            // Contexto de objetos
+            let produto = {
+                descricao: "Notebook",
+                preco: 1800,
+                detalhes: {
+                    fabricante: "abc",
+                    modelo: "xyz" // Atribuição de objetos como atributos para outro objeto
+                }
+            }
+
+            // Composição
+            // é um
+            // tem um
+
+            // Token
+            // Array => []
+            // Objeto => {}
+
+            /* let {
+                descricao, preco
+            } = produto; 
+
+            console.log(descricao, preco); */
+            /* let {
+                descricao: d, preco: p = 3200, desconto = 5
+            } = produto; 
+
+            console.log(d, p, desconto); */
+            let {detalhes: {fabricante: f, modelo: m} } = produto;
+
+            console.log(f, m);
+    
+        </script>
+    </head>
+<body>
+
+</body>
+</html>

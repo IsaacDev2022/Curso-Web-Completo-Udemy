@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> </title>
+        <meta charser="utf-8">
+        <style>
+            *{
+                border: 1px solid blue;
+            }
+            body{
+                color: red;
+                font-size: 20px;
+                /*border: 1px solid blue;*/
+                background: grey;
+            }
+
+            /* Toda vez que voce realiza uma formatação em um elemento,
+            todos os outros que estiverem dentro dele irão herdar essa formatação */
+
+            /* Os seletores em CSS possuem precedencia, ou seja, o último sempre é o aplicado no caso
+            de seletores iguais. Para quebrar essa precedencia, basta inserir a cláusula !important*/
+
+            /* Especificidade: quando um seletor foi mais específico que outro, ele terá maior precedencia.
+            Isso ocorre mesmo o elemento específico vindo antes do outro. */
+        </style>
+    </head>
+<body>
+    <div class="pagina">
+        <h2> 
+            Lorem impsum dolor sit amet,
+            consectur
+        </h2>
+        <p>
+            Lorem impsm dolor it amer,
+            ret ref cver fdrg vbtfr,
+            grre reqahrth, rtg trf sfht sc,
+            re dfg dcg aedf rea ad gf aher hfhart;
+        </p>
+        <p>
+            Lorem impsm dolor it amer,
+            ret ref cver fdrg vbtfr,
+            grre reqahrth, rtg trf sfht sc,
+            re dfg dcg aedf rea ad gf aher hfhart;
+        </p>
+
+    </div>
+</body>
+</html>

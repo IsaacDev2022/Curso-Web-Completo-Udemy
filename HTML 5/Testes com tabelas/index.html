@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Tabelas 
+        </title>
+        <meta charset="utf-8">
+    </head>
+<body>
+    <h2 align="center"> Produtos </h2> 
+    <table border="2" width="100%"> <!-- Dentro das apas do width, podemos usar tanto numeração normal como porcentagem-->
+        <tr>
+            <th colspan="3"> Principais produtos </th>
+        </tr>
+
+        <tr>
+            <th> Código </th>
+            <th> Produto </th>
+            <th> Preço </th>
+        </tr>
+
+        <tr>
+            <td> 001 </td>
+            <td> Notebook </td> 
+            <td> R$2.500.00 </td>
+        </tr>
+
+        <tr>
+            <!-- Podemos colocar imagens e links dentro das células das tabelas -->
+            <td> 002 </td>
+            <td> <a href=""> Clique aqui </a> </td> 
+            <td> R$2.600.00 </td>
+        </tr> 
+
+        <tr>
+            <td rowspan="2"> Desconto </td> <!-- Roswpan é um atributo para mesclar linhas -->
+            <td colspan="2"> Cupom1 - R$10 </td> <!-- Colspan serve para mesclar colunas/extensão das colunas--> 
+            <!-- O número dentro das aspas indica a quantiade de colunas que ele irá mesclar -->
+        </tr>
+
+        <tr>
+            <td> Desconto </td> 
+            <td colspan="2"> Cupom1 - R$10 </td> 
+        </tr>
+    </table>
+
+    <img src="acura.jpg" width="100%"> <!-- Também podemos usar porcentagem no tamanho das imagens -->
+</body>
+</html>

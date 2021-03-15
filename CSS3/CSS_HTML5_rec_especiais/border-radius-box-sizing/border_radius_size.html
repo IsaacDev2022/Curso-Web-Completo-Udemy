@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Border size/radius - CSS </title>
+        <meta charset="utf-8">
+
+        <style>
+           #caixa {
+               width: 300px;
+               height: 300px;
+               background: #b9c941;
+               padding: 50px; /* Um padding sempre faz parte do tamanho, da caixa, ou seja, ele sempre é contabilidado */
+               margin: 10px;
+               box-sizing: border-box; /* Retira a contabilidade do padding */
+               /* Os prefixos webkit servem para usar o border-radius em navegadores que não o aceitam:
+               -webkit-border-image: ;
+               -moz-border-radius: ; */
+           }
+           #caixa2 {
+               width: 300px;
+               height: 300px;
+               background: #b9c941;
+               margin: 10px;
+           }
+
+           .imagem {
+                border-radius: 150px;
+           }
+        </style>
+
+        <!-- Normalize-->
+        <link rel="stylesheet" type="text/css" href="../normaliza.css"> 
+    </head>
+<body>
+    <div id="caixa">
+        <h1> Título da caixa </h1>
+        <p> 
+            Ldax ekf zvnir mc,n nmnjkn nvjk neg njkagreng zxmn qinxzc vbr regcbrtr vbet cgn nn yenbn
+        </p>
+    </div>
+    <div id="caixa2">
+        <h1> Título da caixa 2 </h1>
+        <p> 
+            Ldax ekf zvnir mc,n nmnjkn nvjk neg njkagreng zxmn qinxzc vbr regcbrtr vbet cgn nn yenbn
+        </p>
+    </div>
+
+    <div>
+        <img class="imagem" src="perfil.jpg"> 
+    </div>
+</body>
+</html>

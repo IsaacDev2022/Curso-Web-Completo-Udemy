@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Aula 11 </title>
+        <meta charset="utf-8">
+        <script>
+        // Arrow function: é uma forma de escrever funções anonimas de forma mais enxuta.
+
+        /* let quadrado = function(x = 5) {
+            return x * x;
+        } */
+
+        let quadrado = (x) => {
+            return x * x;
+        }
+
+        // Caso apenas um parametros seja passado, os parenteres são desnecessários
+        /* let quadrado = x => {
+            return x * x;
+        }
+
+        // Apenas quando as instruções são simples
+        let quadrado = x * x; // return implícito 
+
+        document.write(quadrado(3)); */
+
+        
+        let par_impar = numero => {
+            if (numero % 2 ==0) {
+                return 'par';
+            }
+
+            else {
+                return 'impar';
+            }
+        }
+
+        // ou:
+
+        let par_impar = numero => numero % 2 == 0 ? 'par' : 'impar';
+
+        document.write(par_impar(2));
+    
+        </script>
+    </head>
+<body>
+
+</body>
+</html>
