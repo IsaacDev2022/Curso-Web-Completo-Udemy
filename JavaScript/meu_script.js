@@ -1,7 +1,12 @@
-// Aula 1 - 12: 
+// Aula 1 - 12:
 
-// alert("Bom dia, seja bem vindo meu caro");
-// document.getElementById('nome').value = 'Oi';
+// Primeiros comandos em JS
+// alert(); abrir um dialog com um alerta
+// document.write(texto): mostrar conteúdo no browser
+// console.log(): comando para mostrar conteúdo no terminal
+// prompt(): serve para a entrada de dados pelo browser
+// confirm(): abre uma janela de confirmação
+
 
 /* ======================================================================================= */
 
@@ -14,7 +19,7 @@
    Comentário de mais de uma linha.
 */
 
-// Variáveis: espaços em memória para armazenar valores
+// Variáveis: espaços em memória para armazenar valores que irão ser utilziados durante o programa
 /*
    Tipos:
    - String;
@@ -29,10 +34,11 @@
    - Recomendação: o nome da variável deve representar seu conteúdo;
 
 
-// Declaração:
+// Declaração de uma variáveç:
 var variavel;
 
-// JS é case sensitive
+// JS é case sensitive, ou seja, ele diferencia letras maiusculas e minusculas
+// Nesse caso, as duas variáveis: var numero e var Numero, são diferentes
 
 // String:
 var texto = 'Curso de JacaScript';
@@ -46,11 +52,7 @@ var teste = true;
 
 // OBS: a tipagem é realizada em relação ao valor atribuído a variável
 
-// alert(); // abrir um dialog
-// document.write(texto); // mostrar conteúdo no browser
-// console.log(); // comando para mostrar conteúdo no terminal
-
-// prompt(): serve para a entrada de dados pelo browser
+// Exemplos de utilização de variáveis:
 var nome = prompt("Digite o seu nome: ");
 var idade = prompt("Digite a sua idade: ");
 console.log(idade)
@@ -69,19 +71,21 @@ console.log(teste2);
 
 // Para alterar valores de variáveis em JS, basta apenas fazer uma nova atribuição
 
+/* ======================================================================================= */
 
+// Ayla 12: Estruturas de controle
 
 // If - else: estrutura de controle que possibilita
-baseada em uma determinada condição, definir o fluxo que a aplicação vai tomar 
+// baseada em uma determinada condição, definir o fluxo que a aplicação vai tomar 
 
-Operadores de comparação: formar expressões para serem inseridas no if
+// Operadores de comparação: formar expressões para serem inseridas no if
 /* if (false) {
    document.write("Entrou dentro do bloco if (verdadeiro)");
 }
 
  else {
    document.write("Entrou no dentro do bloco else (falso)");
-} 
+}
 
 // Desafio:
 var nota = prompt("Digite a nota: ");
@@ -95,7 +99,12 @@ else if (nota >= media) {
    document.write("Tu estás aprovado!");
 }
 
-// Casting de tipos: converter tipo de dados
+// Casting de tipos: converter tipo de dados, por exemplo, uma variável do tipo Int passa a ser do tipo String.
+// var variavel1 = prompt("Digite um numero: ");
+// var variavel2 = prompt("Digite outro número: ");
+
+// variavel1 = parseInt(variavel1);
+// variavel2 = parseInt(variavel2);
 
 
 /* ======================================================================================= */
@@ -106,6 +115,7 @@ else if (nota >= media) {
    || = OU - Verdadeiro se pelo menos uma das expressões for verdadeiro
    ! = Negação - Inverte o resultado da expressão de comparação:
 */
+
 
 /* ======================================================================================= */
 
@@ -133,11 +143,13 @@ else if (nota < media) {
    document.write("Tu foi reprovado!");
 } */
 
+
 /* ======================================================================================= */
 
 // Aula 15: operador ternário
 // operadores <condição> ? <verdadeiro> : <falso>
 // var resultado = (nota >= media && faltas <= faltas_max) ? "Aprovado" : "Reprovado";
+
 
 /* ======================================================================================= */
 
@@ -174,6 +186,7 @@ switch(parseInt(parametro)) {
       break;
 } */
 
+
 /* ======================================================================================= */
 
 // Aula 17: operadores aritméricos:
@@ -186,6 +199,7 @@ switch(parseInt(parametro)) {
    ++
    --
 */
+
 
 /* ======================================================================================= */
 
@@ -201,6 +215,7 @@ document.write("A multiplicação entre " + num1 + " e " + num2 + " é: " + (par
 document.write("<br>");
 document.write("A divisão entre " + num1 + " e " + num2 + " é: " + (parseInt(num1) / parseInt(num2)));
 
+
 /* ======================================================================================= */
 
 // Aula 19: Operações aritméticas na atribuição de valores: 
@@ -214,6 +229,7 @@ teste -= 5;
 // Podemos fazer o mesmo para quaisquer operações aritméticas.
 
 document.write("Seu valor: " + teste);
+
 
 /* ======================================================================================= */
 
@@ -243,6 +259,7 @@ document.write("Seu valor: " + teste);
    Para utilizar uma função, é preciso chamá-la, por isso
 */
 
+
 /* ======================================================================================= */
 
 // Aula 22: funções - prática: 
@@ -259,6 +276,7 @@ var area = calcularAreaTerreno(largura, comprimento);
 
 document.write(area);
 
+
 /* ======================================================================================= */
 
 // Aula 23: Flexibilidade dos parametros: 
@@ -270,6 +288,7 @@ document.write(area);
 
 console.log(soma(10, 15));
 console.log(soma(10, 15, 10, 5)); // O JS desconsidera os parametros adicionais
+
 
 /* ======================================================================================= */
 
@@ -298,6 +317,7 @@ function x() {
 
 x();
 
+
 /* ======================================================================================= */
 
 // Aula 25: Funções anonimas e técnica de wrapper
@@ -307,6 +327,7 @@ x();
 }
 
 exibirSaudacao("Isaac");
+
 
 /* ======================================================================================= */
 
@@ -347,6 +368,7 @@ var callbackErro = function(erro) {
 
 exibirArtigo(1, callbackSucesso, callbackErro);
 
+
 /* ======================================================================================= */
 
 // Aula 27: funções para manipular strings
@@ -357,6 +379,7 @@ exibirArtigo(1, callbackSucesso, callbackErro);
 
 document.write(nome.substring(6));
 
+
 /* ======================================================================================= */
 
 // Aula 28: funções para tarefas matemáticas:
@@ -366,6 +389,7 @@ document.write(nome.substring(6));
 /* var x = Math.floor(10.380);
 
 document.write(x);
+
 
 /* ======================================================================================= */
 
@@ -422,6 +446,7 @@ document.write("1 dia tem "+ millissegundos_por_dia + " milissegundos");
 document.write("<hr>");
 document.write(Math.ceil(millissegundos_entre_datas / millissegundos_por_dia));
 
+
 /* ======================================================================================= */
 
 // Aula 30: Eventos
@@ -431,6 +456,7 @@ document.write(Math.ceil(millissegundos_entre_datas / millissegundos_por_dia));
 /*
    Eventos: ações que são feitas pelo usuário dentro do browser.
 */
+
 
 /* ======================================================================================= */
 
@@ -452,6 +478,7 @@ function acao2() {
    alert("O cursos do mouse deixou a região do elemento");
 }
 
+
 /* ======================================================================================= */
 
 // Aula 32: Eventos: teclado
@@ -466,6 +493,7 @@ function acao1() {
    alert("Elemento clicado");
 }
 
+
 /* ======================================================================================= */
 
 // Aula 33: Eventos: janela
@@ -474,6 +502,7 @@ function acao1() {
    - onresize: quando o frame/página é redimensionada
    - onscroll: quando o scroll do mouse é acionado
 */
+
 
 /* ======================================================================================= */
 
@@ -485,6 +514,7 @@ function acao1() {
    - onchange: quando o estado do elemento é modificado
 */
 
+
 /* ======================================================================================= */
 
 // Aula 35: DOM: document object model: é uma API que serve para acessar e modificar os elementos HTML
@@ -493,6 +523,7 @@ function acao1() {
 // para estabelecer trajetos bem específicos para alcançar elementos da página.
 
 // Cada elemento de chama nó.
+
 
 /* ======================================================================================= */
 
@@ -507,6 +538,7 @@ function acao1() {
 */
 
 // console.log(document.getElementsByName("nome"));
+
 
 /* ======================================================================================= */
 
@@ -545,6 +577,7 @@ function acao1() {
       }
 }
 
+
 /* ======================================================================================= */
 
 // Aula 38: DOM: manipulando estilos de elementos:
@@ -555,6 +588,7 @@ function acao1() {
    document.getElementById('quadrado').style.width = largura;
 }
 
+
 /* ======================================================================================= */
 
 // Aula 39: DOM: manipulando classes de elementos HTML:
@@ -563,11 +597,13 @@ function acao1() {
    document.getElementById('mensagem').className = 'estilo2';
 }
 
+
 /* ======================================================================================= */
 
 // Aula 40: Array básico: introdução
 
 // Arrays: são listas ordenadas de itens que são associadas a índices (chaves)
+
 
 /* ======================================================================================= */
 
@@ -588,11 +624,13 @@ console.log(lista_frutas[3]);
 
 console.log(lista_frutas[0]);
 
+
 /* ======================================================================================= */
 
 // Aula 42: Extra: diferença entre o atributo length de variáveis do tipo string e array.
 
 // length: armazena o tamanho de arrays e string.
+
 
 /* ======================================================================================= */
 
@@ -607,6 +645,7 @@ lista_coisas['pessoas'] = ['João', 'Isaac', 'Matheus'];
 console.log(lista_coisas['pessoas'][2]);
 
 document.write(lista_coisas['pessoas'][0]);
+
 
 /* ======================================================================================= */
 
@@ -633,6 +672,7 @@ lista_coisas['frutas'].push('Banana');
 
 console.log(lista_coisas);
 
+
 /* ======================================================================================= */
 
 // Aula 45: Array: método de pesquisa
@@ -654,6 +694,7 @@ if (lista_frutas.indexOf('Uva') === -1) {
 else {
    console.log("Elemento existe e está na posição: " + lista_frutas.indexOf('Uva'))
 }
+
 
 /* ======================================================================================= */
 
@@ -688,11 +729,13 @@ function ordenaNumeros(a, b) {
    // Caso haja valores numéricos dentro de Strings, o sort() fará um casting e depois a ordenação normalmente
 }
 
+
 /* ======================================================================================= */
 
 // Aula 47: estrutura de repetição: introdução:
 
 // São estruturas que permitem repetição de comandos até que uma condição seja satisfeita.
+
 
 /* ======================================================================================= */
 
@@ -709,6 +752,7 @@ while (x <= 20) {
    x++;
 }
 
+
 /* ======================================================================================= */
 
 // Aula 49: estrutura do-while:
@@ -721,6 +765,7 @@ do {
    x++;
 } while (x <= 10);
 
+
 /* ======================================================================================= */
 
 // Aula 50: estrutura for:
@@ -730,6 +775,7 @@ do {
 for (i = 0; i <= 10; i++) {
    document.write("<br>" + i);
 }
+
 
 /* ======================================================================================= */
 
@@ -749,6 +795,7 @@ while (y < lista_frutas.length) {
    y++;
 }
 
+
 /* ======================================================================================= */
 
 // Aula 52: criando uma tabuada (laços encadeados):
@@ -759,6 +806,7 @@ while (y < lista_frutas.length) {
       document.write(y + "x " + x + " = " + (y * x) + "<br>");
    }
 }
+
 
 /* ======================================================================================= */
 
@@ -779,6 +827,7 @@ console.log(listaConvidados);
 for (var x in listaConvidados) {
    console.log('indice: ' + x + ' Valor: ' + listaConvidados[x]);
 }
+
 
 /* ======================================================================================= */
 
@@ -803,12 +852,13 @@ listaFuncionarios.forEach(function(valor, indice, array) {
    if (valor == 'Lucas') {
       array[indice] = "Um novo valor";
    }
-   
+
    console.log(array);
 });
 
 console.log(listaFuncionarios);
 document.write("<br>" + listaFuncionarios[3]); */
+
 
 /* ======================================================================================= */
 
@@ -837,6 +887,7 @@ console.log(soma()); */
 
 console.log(soma(7, 5)); */
 
+
 /* ======================================================================================= */
 
 // Aula 55: tratamento de erros com try-catch-finally
@@ -849,7 +900,7 @@ video[1]['Categoria'] = "Anime";
 
 function getVideo() {
    try {
-      console.log(video[0]['Nome']);  
+      console.log(video[0]['Nome']);
 
    } catch (erro) {
       tratarErro(erro);
@@ -868,6 +919,7 @@ function tratarErro(e) {
    console.log(e);
 }
 
+
 /* ======================================================================================= */
 
 // Aula 56: BOM: browser object model, é uma API que permite acesso via JS a recursos do browser
@@ -885,6 +937,7 @@ function fecharPopUp() {
    janela.close();
 }
 
+
 /* ======================================================================================= */
 
 // Aula 58: Screen: atributos nativos da tela do browser
@@ -895,11 +948,13 @@ var largura = window.screen.availWidth;
 document.write("Altura: " + altura + "<br>");
 document.write("Largura: " + largura)
 
+
 /* ======================================================================================= */
 
 // Aula 59: Location: fornece acesso a atributos e métodos da URL atual
 
 // window.location.href = "http://www.google.com";
+
 
 /* ======================================================================================= */
 

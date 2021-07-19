@@ -5,7 +5,7 @@
     </head>
 <body>
     <?php 
-        // Funões matemáticas:
+        // Funções matemáticas:
         /*
             ceil($numero)
             floor($numero)
