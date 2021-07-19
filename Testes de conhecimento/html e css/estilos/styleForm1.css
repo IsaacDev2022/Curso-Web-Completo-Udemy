@@ -1,0 +1,71 @@
+/* Estilo do formulário 1 */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+    background-image: url('../imagens/img3.jpg');
+}
+
+.container {
+    background-color: #bde4d7;
+    opacity: 0.8;
+    margin: 5% 30% 0 30%;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+h2 {
+    text-align: center;
+}
+
+label {
+    text-align: center;
+    font-weight: 700;
+}
+
+.inp_text {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    height: 30px;
+    border: none;
+    outline: none;
+    padding-left: 10px;
+}
+
+.inp_text:focus {
+    border: 2px solid #32a87d;
+    transition: 0.4s;
+}
+
+.inp_center {
+    text-align: center;
+}
+
+select {
+    width: 40%;
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+}
+
+.btn_enviar {
+    width: 100%;
+    padding: 10px;
+    font-size: larger;
+    font-weight: 800;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    background-color: #08fca2;
+}
+
+.btn_enviar:hover {
+    transition: background 1s;
+    background: #62917f;
+}

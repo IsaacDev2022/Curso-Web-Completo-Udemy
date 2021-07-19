@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+    <head>
+        <meta charset="UTF-8">
+        <title>Formulário 1</title>
+        <link rel="stylesheet" href="estilos/styleForm1.css">
+    </head>
+<body>
+    <div class="container">
+        <h2> Preecha os campos abaixo: </h2> <br> <hr> <br>
+        <form>
+            <label> Nome: </label> <br>
+            <input class="inp_text" type="text" name="nome" value="" maxlength="50" placeholder="Nome"> <br>
+
+            <label> Email: </label> <br>
+            <input class="inp_text" type="email" name="email" value="" maxlength="20" placeholder="Email"> <br>
+
+            <label> Senha: </label> <br>
+            <input class="inp_text" type="password" name="senha" value="" maxlength="12" placeholder="Senha"> <br>
+
+            <div class="inp_center">
+                <label> Sexo: </label> <br>
+                <input type="radio" name="sexo" value="masc"> Masculino
+                <input type="radio" name="sexo" value="fem"> Feminino <br><br>
+            </div>
+
+            <div class="inp_center">
+                <label> Selecione seu Estado: </label> <br>
+                <select name="estado">
+                    <option> DF </option>
+                    <option> SP </option>
+                    <option> MG </option>
+                    <option> RJ </option>
+                </select> <br><br>
+            </div>
+
+            <label> Adicione comentários sobre: </label> <br>
+            <textarea name="comentario" maxlength="500"> </textarea> <br><br>
+
+            <div class="inp_center">
+                <input type="checkbox" name="termosUso" value="" >
+                <label> Concordo com os termos de uso </label> <br><br>
+            </div>
+
+            <input type="submit" value="Enviar" class="btn_enviar"> 
+
+        </form>
+    </div>
+</body>
+</html>

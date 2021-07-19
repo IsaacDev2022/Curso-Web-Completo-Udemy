@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulário 5</title>
+</head>
+<body align="center">
+    <fieldset>
+        <h2> Preencha os campos abaixo: </h2> <hr>
+            <form>
+                <label> Nome: </label> <br>
+                <input type="text" name="nome" maxlength="50" required> <br><br>
+
+                <label> Email: </label> <br>
+                <input type="email" name="email" maxlength="16" required> <br><br>
+
+                <label> CPF: </label> <br>
+                <input type="number" name="cpf" maxlength="11" required> <br><br>
+
+                <label> Cor da bandeira: </label> <br>
+                <input type="color" name="corBandeira" required> <br><br>
+
+                <label> Senha: </label> <br>
+                <input type="password" name="senha" maxlength="12" required> <br><br>
+                
+                <label> Data de nascimento: </label> <br>
+                <input type="date" name="dataNascimento" required> <br><br>
+
+                <label> Sexo: </label>
+                <input type="radio" name="sexo" value="masc" required> Masculino
+                <input type="radio" name="sexo" value="fem" required> Feminino <br><br>
+
+                <label> Selecione seu Estado: </label> <br>
+                <select name="estado" required>
+                    <option> DF </option>
+                    <option> MG </option>
+                    <option> SP </option>
+                    <option> RJ </option>
+                    <option> GO </option>
+                </select> <br><br>
+
+                <label> Adicione um comentário sobre voce: </label> <br>
+                <textarea name="ocmentario" required> </textarea> <br><br>
+
+                <input type="checkbox" name="termosUso" required>
+                <label> Concordo com os termos de uso </label> <br><br><hr>
+
+                <input type="submit" value="Enviar"> 
+                <input type="reset" value="Apagar">
+            </form>
+    </fieldset>
+</body>
+</html>

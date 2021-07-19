@@ -1,0 +1,78 @@
+/* Estilo do formulário 2 */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    background-image: url('../imagens/img4.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    background-color: #d27be8;
+    margin: 5% 30% 3% 30%;
+    padding: 20px;
+}
+
+.title {
+    color: #c40df1;
+    font-size: 30px;
+    font-weight: 900;
+    text-align: center;
+}
+
+label {
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+input[type=text], 
+[type=email],
+[type=password] {
+    width: 100%;
+    height: 35px;
+    background-color: #ecdef0;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    margin-bottom: 20px;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    background-color: #e2c8e9;
+    border-radius: 5px;
+    border: none;
+}
+
+.btn {
+    padding: 10px;
+    width: 49%;
+    border: none;
+    font-weight: 900;
+    color: rgb(209, 195, 195);
+}
+
+.btn_enviar {
+    background-color: #5fcc76;
+}
+
+.btn_enviar:hover {
+    background-color: #30d654;
+    transition: 0.6s;
+}
+
+.btn_apagar {
+    background-color: #db705d;
+}
+
+.btn_apagar:hover {
+    background-color: #ee4e32;
+    transition: 0.6s;
+}

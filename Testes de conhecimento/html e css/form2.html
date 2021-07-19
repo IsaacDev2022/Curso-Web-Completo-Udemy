@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Formulário 2</title>
+    <link rel="stylesheet" href="estilos/styleForm2.css">
+</head>
+
+<body>
+    <div class="container">
+        <p class="title"> Preencha os campos abaixo </p> <br>
+        <label> Nome: </label> <br>
+        <input type="text" name="nome" maxlength="50"> <br>
+
+        <label> Email: </label> <br>
+        <input type="email" name="email" value="" maxlength="12"> <br>
+
+        <label> Senha: </label> <br>
+        <input type="password" name="senha" value=""> <br>
+
+        <label> Algum comentário? </label> <br>
+        <textarea name="comentario" maxlength="1000"> </textarea> <br><br>
+
+        <input type="checkbox" name="termosUso">
+        <label> Concordo com os termos de uso </label> <br><br>
+
+        <input type="submit" value="Enviar" class="btn btn_enviar">
+        <input type="reset" value="Apagar" class="btn btn_apagar">
+    </div>
+</body>
+
+</html>

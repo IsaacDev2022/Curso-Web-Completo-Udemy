@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulário 4</title>
+</head>
+<body align="center">
+    <fieldset>
+        <h1> Preencha os campos abaixo: </h1> <hr>
+        <form>
+            <label> Nome completo: </label> <br>
+            <input type="text" name="nome" maxlength="50"> <br><br>
+
+            <label> CPF: </label> <br>
+            <input type="number" name="cpf" maxlength="11"> <br><br>
+            
+            <label> Email: </label> <br>
+            <input type="email" name="email" maxlength="16"> <br><br>
+
+            <label> Sexo: </label>
+            <input type="radio" name="sexo" value="masc"> Masculino
+            <input type="radio" name="sexo" value="fem"> Feminino <br><br>
+
+            <label> Adicione um comentário sobre: </label> <br>
+            <textarea maxlength="1000" name="comentario"> </textarea> <br><br>
+
+            <input type="checkbox" name="termosUso">
+            <label> Concordo com os termos de uso </label> <br><br> <hr>
+
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Apagar">
+        </form>
+    </fieldset>
+</body>
+</html>

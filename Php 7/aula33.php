@@ -6,7 +6,7 @@
 <body>
     <?php 
         // false (true/false) - tipo variável boolean
-        // null e empty - valore especiais
+        // null e empty - valores especiais
         // O empty se aplica aos dois casos
 
         $funcionario1 = null;
